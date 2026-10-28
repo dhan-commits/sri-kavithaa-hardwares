@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paint Brands | Sri Kavitha Hardwares</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .paint-banner {
+            background: #641627;
+            color: white;
+            text-align: center;
+            padding: 55px 20px;
+        }
+
+        .paint-banner h1 {
+            font: bold 42px Georgia, serif;
+            margin-bottom: 10px;
+        }
+
+        .paint-banner span {
+            color: #e5c16f;
+        }
+
+        .brand-grid {
+            max-width: 1150px;
+            margin: 0 auto;
+            padding: 45px 5%;
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 28px;
+        }
+
+        .brand-card {
+            border: 1px solid #eadfda;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px #00000010;
+            background: white;
+        }
+
+        .brand-card img {
+            width: 100%;
+            height: 260px;
+            display: block;
+            object-fit: cover;
+        }
+
+        .brand-info {
+            padding: 22px;
+        }
+
+        .brand-info h2 {
+            color: #641627;
+            font-family: Georgia, serif;
+            margin-bottom: 8px;
+        }
+
+        .brand-info p {
+            color: #786b6b;
+            margin-bottom: 18px;
+        }
+
+        .brand-info a {
+            display: inline-block;
+            background: #641627;
+            color: white;
+            padding: 11px 18px;
+            border-radius: 5px;
+        }
+
+        .brand-info a:hover {
+            background: #c49a4a;
+            color: #42101c;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin: 25px 5%;
+            color: #641627;
+            font-weight: bold;
+        }
+
+        @media(max-width: 600px) {
+            .brand-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .paint-banner h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="navbar">
+        <a class="logo" href="index.html">
+            <span class="logo-icon">⌂</span>
+            <span>SRI KAVITHA
+                <small>HARDWARES</small>
+                <em>Since 2000</em>
+            </span>
+        </a>
+        <a class="whatsapp-btn" href="index.html">Back to Home</a>
+    </header>
+
+    <section class="paint-banner">
+        <h1>Our <span>Paint Brands</span></h1>
+        <p>Discover colours and finishes for your home and projects.</p>
+    </section>
+
+    <a class="back-link" href="index.html#products">← Back to All Products</a>
+
+    <main class="brand-grid">
+
+        <article class="brand-card">
+            <img src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=800&q=80"
+                 alt="Paint brand one">
+            <div class="brand-info">
+                <h2>Paint Brand 1</h2>
+                <p>Explore paint colours, finishes and available products.</p>
+                <a href="paint-brand.html?brand=Paint%20Brand%201">Explore Brand →</a>
+            </div>
+        </article>
+
+        <article class="brand-card">
+            <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=800&q=80"
+                 alt="Paint brand two">
+            <div class="brand-info">
+                <h2>Paint Brand 2</h2>
+                <p>Find paint options for interior and exterior projects.</p>
+                <a href="paint-brand.html?brand=Paint%20Brand%202">Explore Brand →</a>
+            </div>
+        </article>
+
+        <article class="brand-card">
+            <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=800&q=80"
+                 alt="Paint brand three">
+            <div class="brand-info">
+                <h2>Paint Brand 3</h2>
+                <p>Browse painting solutions for your next project.</p>
+                <a href="paint-brand.html?brand=Paint%20Brand%203">Explore Brand →</a>
+            </div>
+        </article>
+
+        <article class="brand-card">
+            <img src="https://images.unsplash.com/photo-1509557965875-b88c97052f0e?auto=format&fit=crop&w=800&q=80"
+                 alt="Paint brand four">
+            <div class="brand-info">
+                <h2>Paint Brand 4</h2>
+                <p>Explore products and ask us about availability.</p>
+                <a href="paint-brand.html?brand=Paint%20Brand%204">Explore Brand →</a>
+            </div>
+        </article>
+
+    </main>
+
+    <footer>
+        <a class="footer-logo" href="index.html">SRI KAVITHA HARDWARES</a>
+        <p>Quality Materials. Strong Foundations.</p>
+    </footer>
+
+</body>
+</html>

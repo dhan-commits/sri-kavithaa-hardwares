@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authorized Dealers | Sri Kavitha Hardwares</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .dealers-page {
+            background: #fff;
+            min-height: 100vh;
+            padding: 35px 5% 60px;
+        }
+
+        .dealers-page h1 {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            font-size: clamp(28px, 3vw, 44px);
+            font-weight: 400;
+            color: #252525;
+            margin-bottom: 45px;
+        }
+
+        .dealer-grid {
+            max-width: 1500px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(5, minmax(0, 1fr));
+            border-top: 1px solid #f0f0f0;
+            border-left: 1px solid #f0f0f0;
+        }
+
+        .dealer-card {
+            min-height: 300px;
+            padding: 28px 15px;
+            text-align: center;
+            border-right: 1px solid #ededed;
+            border-bottom: 1px solid #ededed;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: box-shadow .25s, transform .25s;
+        }
+
+        .dealer-card:hover {
+            box-shadow: 0 5px 20px #00000012;
+            transform: translateY(-3px);
+        }
+
+        .dealer-logo {
+            width: 100%;
+            height: 125px;
+            object-fit: contain;
+            margin-bottom: 22px;
+        }
+
+        .logo-placeholder {
+            height: 125px;
+            width: 100%;
+            display: grid;
+            place-items: center;
+            margin-bottom: 22px;
+            font-size: 30px;
+            font-weight: 800;
+            letter-spacing: -1px;
+        }
+
+        .legrand { color: #e4002b; }
+        .birla { color: #302d2c; }
+        .dulux { color: #183575; }
+        .vguard { color: #f2b632; }
+        .finolex { color: #079bd5; }
+
+        .dealer-card h2 {
+            font-size: 22px;
+            font-weight: 400;
+            color: #242424;
+            margin-bottom: 5px;
+        }
+
+        .dealer-card p {
+            font-size: 17px;
+            color: #333;
+        }
+
+        .back-home {
+            display: block;
+            width: fit-content;
+            margin: 35px auto 0;
+            background: #641627;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 5px;
+        }
+
+        @media (max-width: 1000px) {
+            .dealer-grid {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 600px) {
+            .dealers-page {
+                padding: 28px 4%;
+            }
+
+            .dealer-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .dealer-card {
+                min-height: 230px;
+                padding: 18px 8px;
+            }
+
+            .dealer-logo,
+            .logo-placeholder {
+                height: 90px;
+            }
+
+            .dealer-card h2 {
+                font-size: 18px;
+            }
+
+            .dealer-card p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="navbar">
+        <a class="logo" href="index.html">
+            <span class="logo-icon">⌂</span>
+            <span>SRI KAVITHA
+                <small>HARDWARES</small>
+                <em>Since 2000</em>
+            </span>
+        </a>
+        <a class="whatsapp-btn" href="index.html#contact">Contact Us</a>
+    </header>
+
+    <main class="dealers-page">
+
+        <h1>Authorized dealers for</h1>
+
+        <div class="dealer-grid">
+
+            <article class="dealer-card">
+                <div class="logo-placeholder legrand">Legrand®</div>
+                <h2>Legrand</h2>
+                <p>Switches &amp; Accessories</p>
+            </article>
+
+            <article class="dealer-card">
+                <div class="logo-placeholder birla">BIRLA<br>OPUS</div>
+                <h2>Birla Opus</h2>
+                <p>All range of Paints</p>
+            </article>
+
+            <article class="dealer-card">
+                <div class="logo-placeholder dulux">Dulux</div>
+                <h2>Dulux</h2>
+                <p>All range of Paints</p>
+            </article>
+
+            <article class="dealer-card">
+                <div class="logo-placeholder vguard">V-GUARD</div>
+                <h2>V Guard</h2>
+                <p>Wires &amp; Switch Gears</p>
+            </article>
+
+            <article class="dealer-card">
+                <div class="logo-placeholder finolex">Finolex<br><small>PIPES</small></div>
+                <h2>Finolex</h2>
+                <p>Pipes &amp; Fittings</p>
+            </article>
+
+        </div>
+
+        <a class="back-home" href="index.html">← Back to Home</a>
+
+    </main>
+
+    <footer>
+        <a class="footer-logo" href="index.html">SRI KAVITHA HARDWARES</a>
+        <p>Quality Materials. Strong Foundations.</p>
+    </footer>
+
+</body>
+</html>
